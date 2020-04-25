@@ -22,7 +22,7 @@ func main() {
 
 	r := chi.NewRouter()
 
-	r.Get("/hello", h.Hello)
+	r.Get("/", h.Hello)
 
 	path := cfg.Host + ":" + cfg.Port
 

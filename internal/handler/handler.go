@@ -13,5 +13,5 @@ func NewHandler() *Handler {
 }
 
 func (h *Handler) Hello(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprint(w, "hello golang Voronezh!")
+	fmt.Fprint(w, "hello golang Saint-Petersburg!")
 }
