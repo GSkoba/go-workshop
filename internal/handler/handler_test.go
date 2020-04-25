@@ -36,7 +36,7 @@ func TestHandler_Hello(t *testing.T) {
 
 			h := handler.NewHandler(apiMock, "")
 
-			req, _ := http.NewRequest("GET", "/hello", nil)
+			req, _ := http.NewRequest("GET", "/", nil)
 			rr := httptest.NewRecorder()
 
 			h.Hello(rr, req)
