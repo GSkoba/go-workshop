@@ -17,9 +17,7 @@ func NewHandler(jokeClient api.Client) *Handler {
 }
 
 func (h *Handler) Hello(w http.ResponseWriter, r *http.Request) {
-<<<<<<< HEAD
-	fmt.Fprint(w, "hello golang Saint-Petersburg!")
-=======
+
 	joke, err := h.jokeClient.GetJoke()
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
@@ -27,5 +25,4 @@ func (h *Handler) Hello(w http.ResponseWriter, r *http.Request) {
 	}
 
 	fmt.Fprint(w, joke.Joke)
->>>>>>> d95f61c0e8559840c8a19b0f32967204dddc5b09
 }
